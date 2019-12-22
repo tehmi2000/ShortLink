@@ -1,10 +1,12 @@
 .navbar{
-
+  width: 100%;
     background: #264653;
     font-size: 14px;
     padding-bottom: 10px;
     box-shadow: 5px 0px 10px rgba(0,0,0,0.5);
     transition: ease 0.5s;
+    position: fixed;
+    z-index: 99;
 }
 .scroll{
   position: fixed;
@@ -57,13 +59,19 @@
     position: absolute;
     top: 10px;
     right:20px;
-    cursor:pointer
+    cursor:pointer;
+    font-size: 1.5em;
 }
+.navbar-toggle i{
+  color: #17B794;
+  font-size: 1.5em;
+}
+
 @media screen and (min-width:768px){
     .navbar{
         display: flex;
         justify-content: space-between;
-        padding: 1.5rem 3rem 0px 3rem;
+        padding: 0rem 3rem 0px 3rem;
     }
     .title{
         margin-left: 3em;
